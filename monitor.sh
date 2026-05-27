@@ -1,10 +1,9 @@
 #!/bin/bash
 
-while true; do
 	
 	usage_per=$(df / | awk ' NR==2 {sub(/%/,"",$5) ;print $5}')
 
-	if [[ $usage_per -gt 1 ]]; then
+	if [[ $usage_per -gt 80 ]]; then
 		echo "WARNING $(date +"%Y-%m-%d %H:%M:%S") - Disk usage at $usage_per%" >> /tmp/monitor.log
 	fi
 
@@ -16,4 +15,3 @@ while true; do
 	fi
 	
 	sleep 30
-done
