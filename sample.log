@@ -1,0 +1,15 @@
+May 27 15:55:13 fedora systemd[1]: Started crond.service - Command Scheduler.
+May 27 15:55:13 fedora crond[25430]: (CRON) STARTUP (1.7.2)
+May 27 15:55:13 fedora crond[25430]: (CRON) INFO (Syslog will be used instead of sendmail.)
+May 27 15:55:13 fedora crond[25430]: (CRON) INFO (RANDOM_DELAY will be scaled with factor 87% if used.)
+May 27 15:55:13 fedora crond[25430]: (CRON) INFO (running with inotify support)
+May 27 16:01:00 fedora CROND[26088]: (root) CMD (run-parts /etc/cron.hourly)
+May 27 16:01:00 fedora anacron[26105]: Anacron started on 2026-05-27
+May 27 16:01:00 fedora anacron[26105]: Will run job `cron.daily' in 7 min.
+May 27 16:01:00 fedora anacron[26105]: Will run job `cron.weekly' in 27 min.
+May 27 16:01:00 fedora anacron[26105]: Will run job `cron.monthly' in 47 min.
+May 27 16:01:00 fedora anacron[26105]: Jobs will be executed sequentially
+May 27 16:01:00 fedora run-parts[26107]: (/etc/cron.hourly) finished 0anacron
+May 27 16:01:00 fedora CROND[26086]: (root) CMDEND (run-parts /etc/cron.hourly)
+May 27 16:08:00 fedora anacron[26105]: Job `cron.daily' started
+May 27 16:08:00 fedora anacron[26105]: Job `cron.daily' terminated
