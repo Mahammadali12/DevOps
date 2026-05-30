@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: heavy-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: heavy
+  template:
+    metadata:
+      labels:
+        app: heavy
+    spec:
+      containers:
+      - name: heavy
+        image: nginx:latest
+        imagePullPolicy: IfNotPresent
+        resources:
+          requests:
+            memory: "50Gi"
+            cpu: "32"
